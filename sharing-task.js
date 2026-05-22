@@ -36,6 +36,17 @@ reusable functions that solve specific tasks. This activity encourages:
 // 3. Capitalize the role if needed.
 // 4. Return the result.
 
+function generateBadge(name, role) {
+    // Capitalize first letter of role
+    let formattedRole = role.charAt(0).toUpperCase() + role.slice(1).toLowerCase();
+    let formattedName = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+
+    // Format and return badge string
+    return `Name: ${formattedName}, Role: ${formattedRole}`;
+}
+
+console.log(generateBadge("Alice", "speaker"));
+console.log(generateBadge("bob", "organizer"));
 
 // ============================================
 // 🧩 Task 2: Calculate Event Cost
@@ -51,6 +62,17 @@ reusable functions that solve specific tasks. This activity encourages:
 // 3. If so, apply a 10% discount.
 // 4. Return the final total.
 
+function calculateEventCost(num, cost) {
+    if (num > 100) {
+        return `$${num * cost * 0.9}`;
+    } else {
+        return `$${num * cost}`;
+    }
+}
+
+console.log(calculateEventCost(150, 100));
+console.log(calculateEventCost(90, 100));
+
 
 // ============================================
 // 🧩 Task 3: Validate Email
@@ -63,6 +85,18 @@ reusable functions that solve specific tasks. This activity encourages:
 // Steps:
 // 1. Check if the string includes both "@" and ".".
 // 2. Return true or false accordingly.
+
+function validateEmail(email) {
+    let atIndex = email.indexOf("@");
+    let dotIndex = email.indexOf(".com");
+
+    return atIndex > 0 && dotIndex > atIndex;
+}
+
+console.log(validateEmail("jay@gmail.com")); // true
+console.log(validateEmail("@gmail.com"));    // false
+console.log(validateEmail("jaygmail.com"));  // false
+
 
 
 // ============================================
@@ -89,3 +123,7 @@ reusable functions that solve specific tasks. This activity encourages:
 // - Explain how your team approached the design and testing process
 
 // ✅ Bonus: Can you extend any of the functions to be more flexible or reusable?
+
+// Generates an attendee badge with formatted name and role
+
+
