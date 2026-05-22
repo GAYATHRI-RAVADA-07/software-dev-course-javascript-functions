@@ -72,32 +72,54 @@ for (let i = 0; i < names.length; i++) {
 */
 
 // ✅ Your refactored code goes below this line!
+
+
+// Function 1: Greeting function
+// Takes a name as input and returns a welcome message
 function greeting(name) {
    return `Welcome, ${name}!`;
 }
 
+// Calling greeting function and printing result
 console.log(greeting("Gayathri"));
 
+
+// Function 2: Sum of two numbers
+// Takes two numbers, adds them, and returns a formatted string
 function sumOfNumbers(num1, num2) {
-   let sum = num1 + num2;
+   let sum = num1 + num2; // calculate sum
+
+   // return result using template literals
    return `The sum of ${num1} and ${num2} is ${sum}.`;
 }
 
+// Calling sum function
 console.log(sumOfNumbers(13, 4));
 
+
+// Function 3: Product of two numbers
+// Takes two numbers, multiplies them, and returns a formatted string
 function productOfNumbers(num3, num4) {
-   let product = num3 * num4;
+   let product = num3 * num4; // calculate product
+
+   // return result using template literals
    return `The product of ${num3} and ${num4} is ${product}.`;
 }
 
+// Calling product function
 console.log(productOfNumbers(15, 5));
 
+
+// Function 4: Printing list of names
+// Takes an array of names and prints each name one by one
 function printingNames(names) {
    console.log("Names in the list:");
+
+   // loop through the array
    for (let i = 0; i < names.length; i++) {
-      console.log(names[i]);
+      console.log(names[i]); // print each name
    }
 }
 
-
+// Calling function with an array of names
 printingNames(["Alice", "Bob", "Charlie"]);

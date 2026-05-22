@@ -37,7 +37,7 @@ reusable functions that solve specific tasks. This activity encourages:
 // 4. Return the result.
 
 function generateBadge(name, role) {
-    // Capitalize first letter of role
+    // Capitalize first letter of role and name
     let formattedRole = role.charAt(0).toUpperCase() + role.slice(1).toLowerCase();
     let formattedName = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
 
